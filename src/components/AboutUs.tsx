@@ -177,7 +177,7 @@ const AboutUs = () => {
               </h3>
             </div>
             <div className={`grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 scroll-carousel-stagger ${galleryVisible ? 'visible' : ''}`}>
-              {destinations.map((destination, index) => (
+              {destinations.map((destination) => (
                 <div
                   key={destination.id}
                   className="group relative bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
