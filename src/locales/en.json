@@ -1,0 +1,163 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "service": "Service",
+    "blog": "Blog",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "header": {
+    "login": "Login",
+    "signup": "Signup"
+  },
+  "auth": {
+    "back": "Back",
+    "login": {
+      "title": "Sign In",
+      "subtitle": "Enter your credentials to access your account",
+      "email": "Email Address",
+      "password": "Password",
+      "forgotPassword": "Forgot password?",
+      "rememberMe": "Remember me",
+      "submit": "Sign In",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "welcomeBack": "Welcome Back!",
+      "welcomeMessage": "Start your next adventure with us"
+    },
+    "signup": {
+      "title": "Create Account",
+      "subtitle": "Fill in your details to get started",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "agreeTerms": "I agree to the",
+      "termsOfService": "Terms of Service",
+      "subscribeNewsletter": "Subscribe to newsletter for travel deals and updates",
+      "submit": "Create Account",
+      "hasAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "joinUs": "Join Us Today!",
+      "joinMessage": "Create your account and start exploring the world"
+    }
+  },
+  "hero": {
+    "welcome": "Welcome to TripHive",
+    "title": "Join the Hive and Explore the",
+    "title.world": "World",
+    "description": "TripHive is a community of like-minded travelers who share a passion for exploring the world. Our website offers travel inspiration, advice, and insights from experienced travelers, as well as tools to plan and book your next adventure.",
+    "feature1": "✈️ Discover hidden gems and popular destinations",
+    "feature2": "🌍 Connect with fellow travelers worldwide",
+    "feature3": "📸 Share your adventures and get inspired",
+    "feature4": "🎯 Plan your perfect trip with our tools",
+    "button": {
+      "getStarted": "Get Started",
+      "watchDemo": "Watch Demo"
+    },
+    "stats": {
+      "travelers": "Active Travelers",
+      "destinations": "Destinations",
+      "rating": "Rating"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "heading": "Explore All Corners Of The",
+    "heading.world": "World",
+    "heading.with": "With US",
+    "description": "TripHive is a community of like-minded travelers who share a passion for exploring the world. Our website offers travel inspiration, advice, and insights from experienced travelers, as well as tools to plan and book your next adventure.",
+    "destinations": {
+      "title": "Popular Destinations"
+    }
+  },
+  "services": {
+    "title": "We Offer Best Services",
+    "description": "TripHive provides exceptional travel services to make your journey unforgettable. Choose from our range of premium services designed for every type of traveler."
+  },
+  "blog": {
+    "title": "Latest Travel Stories",
+    "description": "Discover inspiring travel stories, tips, and guides from our community of travelers.",
+    "readMore": "Read More"
+  },
+  "experience": {
+    "title": "Our Experience",
+    "heading": "With Our Experience We Will",
+    "heading.serve": "Serve You",
+    "description": "Over a decade of expertise in creating unforgettable travel experiences. Our team of travel professionals is dedicated to making your journey exceptional.",
+    "stats": {
+      "years": "Years Experience",
+      "destinations": "Destinations",
+      "travelers": "Happy Travelers"
+    },
+    "trust": {
+      "title": "Why Travelers Trust Us"
+    }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "heading": "What Our Customers",
+    "heading.say": "Say About Us",
+    "description": "Don't just take our word for it. Here's what travelers from around the world have to say about their experiences with TripHive."
+  },
+  "howItWorks": {
+    "subtitle": "How It Works",
+    "title": "Simple Steps to Start Your Journey",
+    "description": "Getting started with TripHive is easy. Follow these simple steps to begin your travel adventure.",
+    "step1": {
+      "title": "Create Your Account",
+      "description": "Sign up in minutes with your email or social media account. Join our community of travelers."
+    },
+    "step2": {
+      "title": "Plan Your Trip",
+      "description": "Browse destinations, read reviews, and use our planning tools to create your perfect itinerary."
+    },
+    "step3": {
+      "title": "Book & Confirm",
+      "description": "Secure your bookings with our trusted partners. Get instant confirmations and travel documents."
+    },
+    "step4": {
+      "title": "Enjoy Your Adventure",
+      "description": "Travel with confidence knowing you have 24/7 support and access to our travel community."
+    },
+    "cta": "Get Started Today"
+  },
+  "subscribe": {
+    "title": "Stay Updated",
+    "heading": "Subscribe To Get Information, Latest News And Other Interesting Offers",
+    "description": "Join our newsletter and be the first to know about exclusive deals, travel tips, and new destination launches.",
+    "placeholder": "Enter your email address",
+    "button": "Subscribe Now",
+    "privacy": "By subscribing, you agree to our Privacy Policy. Unsubscribe at any time.",
+    "subscribers": "Subscribers",
+    "updates": "Updates",
+    "deals": "Deals",
+    "thankYou": "Thank you for subscribing! Check your email for confirmation."
+  },
+  "footer": {
+    "company": "Company",
+    "support": "Support",
+    "legal": "Legal",
+    "contact": "Contact Us",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "howItWorks": "How It Works",
+      "blogs": "Blogs",
+      "contactUs": "Contact Us",
+      "helpCenter": "Help Center",
+      "safetyCenter": "Safety Center",
+      "communityGuidelines": "Community Guidelines",
+      "cookiesPolicy": "Cookies Policy",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms Of Service",
+      "blog": "Blog",
+      "service": "Service"
+    },
+    "copyright": "© {year} Travels'. All rights reserved."
+  }
+}
