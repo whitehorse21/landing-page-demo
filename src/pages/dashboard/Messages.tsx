@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useLanguage } from '../../contexts/LanguageContext'
-import { SkeletonMessageItem, SkeletonCard } from '../../components/dashboard/SkeletonLoader'
+import { SkeletonMessageItem } from '../../components/dashboard/SkeletonLoader'
 
 const Messages = () => {
   const { t } = useLanguage()

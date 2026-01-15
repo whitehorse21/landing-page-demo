@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import BookingDetailsModal from '../../components/dashboard/BookingDetailsModal'
 import { useLanguage } from '../../contexts/LanguageContext'
-import { SkeletonTableRow, SkeletonCard } from '../../components/dashboard/SkeletonLoader'
+import { SkeletonTableRow } from '../../components/dashboard/SkeletonLoader'
 
 interface Booking {
   id: number
