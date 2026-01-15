@@ -384,6 +384,14 @@
         "daysAgo": "il y a {count} jours",
         "dayAgo": "il y a {count} jour"
       }
+    },
+    "logout": {
+      "confirm": {
+        "title": "Confirmer la Déconnexion",
+        "message": "Êtes-vous sûr de vouloir vous déconnecter? Vous devrez vous reconnecter pour accéder à votre compte.",
+        "cancel": "Annuler",
+        "logout": "Déconnexion"
+      }
     }
   }
 }

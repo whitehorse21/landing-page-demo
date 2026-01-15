@@ -384,6 +384,14 @@
         "daysAgo": "{count} dagen geleden",
         "dayAgo": "{count} dag geleden"
       }
+    },
+    "logout": {
+      "confirm": {
+        "title": "Uitloggen Bevestigen",
+        "message": "Weet je zeker dat je wilt uitloggen? Je moet opnieuw inloggen om toegang te krijgen tot je account.",
+        "cancel": "Annuleren",
+        "logout": "Uitloggen"
+      }
     }
   }
 }

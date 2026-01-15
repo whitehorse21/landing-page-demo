@@ -384,6 +384,14 @@
         "daysAgo": "{count} days ago",
         "dayAgo": "{count} day ago"
       }
+    },
+    "logout": {
+      "confirm": {
+        "title": "Confirm Logout",
+        "message": "Are you sure you want to logout? You will need to sign in again to access your account.",
+        "cancel": "Cancel",
+        "logout": "Logout"
+      }
     }
   }
 }
