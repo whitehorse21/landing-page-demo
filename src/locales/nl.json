@@ -160,5 +160,230 @@
       "service": "Dienst"
     },
     "copyright": "© {year} Travels'. Alle rechten voorbehouden."
+  },
+  "dashboard": {
+    "menu": {
+      "dashboard": "Dashboard",
+      "browseCities": "Steden Bladeren",
+      "bookings": "Boekingen",
+      "payments": "Betalingen",
+      "messages": "Berichten",
+      "settings": "Instellingen",
+      "logout": "Uitloggen"
+    },
+    "header": {
+      "notifications": "Meldingen",
+      "noNotifications": "Geen meldingen"
+    },
+    "dashboard": {
+      "title": "Welkom terug, {name}!",
+      "subtitle": "Dit is wat er gebeurt met je reizen vandaag.",
+      "stats": {
+        "totalBookings": "Totaal Boekingen",
+        "upcomingTrips": "Aankomende Reizen",
+        "totalSpent": "Totaal Besteed",
+        "messages": "Berichten",
+        "thisMonth": "+{value} deze maand",
+        "nextTrip": "Volgende: {destination} over {days} dagen",
+        "unread": "{count} ongelezen"
+      },
+      "charts": {
+        "bookingsOverview": "Boekingen Overzicht",
+        "spendingTrend": "Uitgaventrend"
+      },
+      "recentBookings": "Recente Boekingen",
+      "departure": "Vertrek"
+    },
+    "browseCities": {
+      "title": "Steden Bladeren",
+      "subtitle": "Ontdek geweldige bestemmingen voor je volgende avontuur",
+      "searchPlaceholder": "Zoek steden...",
+      "bookNow": "Nu Boeken",
+      "perNight": "per nacht",
+      "loadMore": "Meer Laden",
+      "moreAvailable": "meer beschikbaar"
+    },
+    "bookings": {
+      "title": "Mijn Boekingen",
+      "subtitle": "Beheer je huidige en eerdere reisboekingen",
+      "tabs": {
+        "current": "Huidig",
+        "past": "Verleden"
+      },
+      "fields": {
+        "checkIn": "Inchecken",
+        "checkOut": "Uitchecken",
+        "guests": "Gasten",
+        "bookingId": "Boekings-ID"
+      },
+      "status": {
+        "confirmed": "Bevestigd",
+        "pending": "In Afwachting",
+        "completed": "Voltooid"
+      },
+      "cancel": "Annuleren",
+      "details": {
+        "title": "Boekingsdetails",
+        "duration": "Duur",
+        "nights": "{count} nacht",
+        "nights_plural": "{count} nachten",
+        "guest": "{count} gast",
+        "guest_plural": "{count} gasten",
+        "priceSummary": "Prijsoverzicht",
+        "totalAmount": "Totaalbedrag",
+        "paymentCompleted": "Betaling voltooid op {date}",
+        "actions": {
+          "downloadReceipt": "Bon Downloaden",
+          "cancelBooking": "Boeking Annuleren"
+        }
+      },
+      "pagination": {
+        "showing": "Tonen",
+        "to": "tot",
+        "of": "van",
+        "results": "resultaten",
+        "previous": "Vorige",
+        "next": "Volgende",
+        "page": "Pagina"
+      }
+    },
+    "payments": {
+      "title": "Betalingen en Transacties",
+      "subtitle": "Bekijk je betalingsgeschiedenis en transactiedetails",
+      "summary": {
+        "totalSpent": "Totaal Besteed",
+        "pendingPayments": "Openstaande Betalingen",
+        "totalTransactions": "Totaal Transacties"
+      },
+      "chart": {
+        "paymentHistory": "Betalingsgeschiedenis",
+        "payments": "Betalingen",
+        "refunds": "Terugbetalingen"
+      },
+      "transactionHistory": "Transactiegeschiedenis",
+      "table": {
+        "date": "Datum",
+        "description": "Beschrijving",
+        "method": "Methode",
+        "amount": "Bedrag",
+        "status": "Status"
+      },
+      "status": {
+        "completed": "Voltooid",
+        "pending": "In Afwachting"
+      },
+      "filter": {
+        "status": "Filter op Status",
+        "all": "Alles"
+      },
+      "type": {
+        "payment": "Betaling",
+        "refund": "Terugbetaling"
+      },
+      "descriptions": {
+        "parisTrip": "Parijs Reisboeking",
+        "tokyoTrip": "Tokyo Reisboeking",
+        "barcelonaTrip": "Barcelona Reisboeking",
+        "londonTrip": "Londen Reisboeking",
+        "romeTrip": "Rome Reisboeking",
+        "dubaiTrip": "Dubai Reisboeking",
+        "newYorkTrip": "New York Reisboeking",
+        "sydneyTrip": "Sydney Reisboeking",
+        "baliTrip": "Bali Reisboeking",
+        "santoriniTrip": "Santorini Reisboeking",
+        "cancelledLondonTrip": "Geannuleerde Londen Reis",
+        "cancelledRomeTrip": "Geannuleerde Rome Reis",
+        "amsterdamTrip": "Amsterdam Reisboeking",
+        "pragueTrip": "Prague Reisboeking",
+        "viennaTrip": "Wenen Reisboeking",
+        "istanbulTrip": "Istanbul Reisboeking",
+        "lisbonTrip": "Lissabon Reisboeking",
+        "athensTrip": "Athene Reisboeking",
+        "cancelledAmsterdamTrip": "Geannuleerde Amsterdam Reis",
+        "cancelledPragueTrip": "Geannuleerde Prague Reis"
+      },
+      "pagination": {
+        "showing": "Tonen",
+        "to": "tot",
+        "of": "van",
+        "results": "resultaten",
+        "previous": "Vorige",
+        "next": "Volgende",
+        "page": "Pagina"
+      }
+    },
+    "messages": {
+      "title": "Berichten",
+      "subtitle": "Chat met ondersteuning en reispartners",
+      "searchPlaceholder": "Zoek gesprekken...",
+      "online": "Online",
+      "selectConversation": "Selecteer een gesprek om te beginnen met chatten",
+      "typeMessage": "Typ een bericht...",
+      "send": "Verzenden"
+    },
+    "settings": {
+      "title": "Instellingen",
+      "subtitle": "Beheer je accountinstellingen en voorkeuren",
+      "tabs": {
+        "profile": "Profiel",
+        "security": "Beveiliging",
+        "preferences": "Voorkeuren"
+      },
+      "profile": {
+        "title": "Profielinformatie",
+        "changePhoto": "Foto Wijzigen",
+        "firstName": "Voornaam",
+        "lastName": "Achternaam",
+        "email": "E-mail",
+        "phone": "Telefoon",
+        "bio": "Bio",
+        "saveChanges": "Wijzigingen Opslaan"
+      },
+      "security": {
+        "title": "Beveiligingsinstellingen",
+        "currentPassword": "Huidig Wachtwoord",
+        "newPassword": "Nieuw Wachtwoord",
+        "confirmNewPassword": "Bevestig Nieuw Wachtwoord",
+        "updatePassword": "Wachtwoord Bijwerken"
+      },
+      "preferences": {
+        "title": "Voorkeuren",
+        "emailNotifications": "E-mailmeldingen",
+        "emailNotificationsDescription": "Ontvang e-mailupdates over je boekingen",
+        "smsNotifications": "SMS-meldingen",
+        "smsNotificationsDescription": "Ontvang SMS-updates over je reizen"
+      }
+    },
+    "booking": {
+      "modal": {
+        "checkIn": "Incheckdatum",
+        "checkOut": "Uitcheckdatum",
+        "guests": "Aantal Gasten",
+        "paymentMethod": "Betalingsmethode",
+        "creditCard": "Creditcard",
+        "debitCard": "Debetkaart",
+        "paypal": "PayPal",
+        "bankTransfer": "Bankoverschrijving",
+        "summary": {
+          "nights": "{price} × {nights} nachten",
+          "guestsNights": "{guests} {guestLabel} × {nights} nachten",
+          "total": "Totaal",
+          "confirm": "Boeking Bevestigen - ${amount}",
+          "processing": "Verwerken..."
+        },
+        "success": "Boeking bevestigd! Bekijk je boekingspagina voor details."
+      }
+    },
+    "notifications": {
+      "bookingConfirmed": "Je boeking naar {destination} is bevestigd",
+      "paymentReceived": "Betaling ontvangen voor {destination} reis",
+      "newMessage": "Nieuw bericht van reisagent",
+      "time": {
+        "hoursAgo": "{count} uur geleden",
+        "hourAgo": "{count} uur geleden",
+        "daysAgo": "{count} dagen geleden",
+        "dayAgo": "{count} dag geleden"
+      }
+    }
   }
 }

@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useLanguage } from '../contexts/LanguageContext'
 import { useTheme } from '../contexts/ThemeContext'
+import { useAuth } from '../contexts/AuthContext'
 
 const languages = [
   { code: 'en' as const, name: 'English', flag: 'https://flagcdn.com/w40/gb.png' },
@@ -17,7 +18,9 @@ const LoginPage = () => {
   const langMenuRef = useRef<HTMLDivElement>(null)
   const { t, language, setLanguage } = useLanguage()
   const { theme, toggleTheme } = useTheme()
+  const { login } = useAuth()
   const navigate = useNavigate()
+  const [isLoading, setIsLoading] = useState(false)
 
   const currentLanguage = languages.find(lang => lang.code === language) || languages[0]
 
@@ -38,10 +41,16 @@ const LoginPage = () => {
     }
   }, [isLangMenuOpen])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle login logic here
-    console.log('Login:', { email, password })
+    setIsLoading(true)
+    const success = await login(email, password)
+    setIsLoading(false)
+    if (success) {
+      navigate('/dashboard')
+    } else {
+      alert('Invalid credentials. Please try again.')
+    }
   }
 
   return (
@@ -197,9 +206,10 @@ const LoginPage = () => {
 
               <button
                 type="submit"
-                className="w-full px-6 py-4 text-lg bg-primary dark:bg-emerald-500 text-white rounded-xl font-bold hover:bg-primary-dark dark:hover:bg-emerald-600 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-[1.02] transform"
+                disabled={isLoading}
+                className="w-full px-6 py-4 text-lg bg-primary dark:bg-emerald-500 text-white rounded-xl font-bold hover:bg-primary-dark dark:hover:bg-emerald-600 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-[1.02] transform disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {t('auth.login.submit')}
+                {isLoading ? 'Signing in...' : t('auth.login.submit')}
               </button>
             </form>
 

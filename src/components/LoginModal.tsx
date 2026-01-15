@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useLanguage } from '../contexts/LanguageContext'
+import { useAuth } from '../contexts/AuthContext'
 
 interface LoginModalProps {
   isOpen: boolean
@@ -10,7 +11,10 @@ interface LoginModalProps {
 const LoginModal = ({ isOpen, onClose }: LoginModalProps) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
   const { t } = useLanguage()
+  const { login } = useAuth()
+  const navigate = useNavigate()
 
   useEffect(() => {
     if (isOpen) {
@@ -23,11 +27,17 @@ const LoginModal = ({ isOpen, onClose }: LoginModalProps) => {
     }
   }, [isOpen])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle login logic here
-    console.log('Login:', { email, password })
-    onClose()
+    setIsLoading(true)
+    const success = await login(email, password)
+    setIsLoading(false)
+    if (success) {
+      onClose()
+      navigate('/dashboard')
+    } else {
+      alert('Invalid credentials. Please try again.')
+    }
   }
 
   if (!isOpen) return null
@@ -110,9 +120,10 @@ const LoginModal = ({ isOpen, onClose }: LoginModalProps) => {
 
           <button
             type="submit"
-            className="w-full px-4 py-3 bg-primary dark:bg-emerald-500 text-white rounded-lg font-semibold hover:bg-primary-dark dark:hover:bg-emerald-600 transition-all duration-300 shadow-lg hover:scale-105"
+            disabled={isLoading}
+            className="w-full px-4 py-3 bg-primary dark:bg-emerald-500 text-white rounded-lg font-semibold hover:bg-primary-dark dark:hover:bg-emerald-600 transition-all duration-300 shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {t('auth.login.submit')}
+            {isLoading ? 'Signing in...' : t('auth.login.submit')}
           </button>
         </form>
 

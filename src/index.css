@@ -1498,6 +1498,37 @@ textarea,
   animation: blogDetailSlideOut 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
+/* Notification Side Panel Animation */
+@keyframes notificationSlideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes notificationSlideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.notification-panel-enter {
+  animation: notificationSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.notification-panel-exit {
+  animation: notificationSlideOut 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
 .testimonial-card {
   flex-shrink: 0;
 }

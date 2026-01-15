@@ -160,5 +160,230 @@
       "service": "Servicio"
     },
     "copyright": "© {year} Travels'. Todos los derechos reservados."
+  },
+  "dashboard": {
+    "menu": {
+      "dashboard": "Panel de Control",
+      "browseCities": "Explorar Ciudades",
+      "bookings": "Reservas",
+      "payments": "Pagos",
+      "messages": "Mensajes",
+      "settings": "Configuración",
+      "logout": "Cerrar Sesión"
+    },
+    "header": {
+      "notifications": "Notificaciones",
+      "noNotifications": "No hay notificaciones"
+    },
+    "dashboard": {
+      "title": "¡Bienvenido de nuevo, {name}!",
+      "subtitle": "Esto es lo que está pasando con tus viajes hoy.",
+      "stats": {
+        "totalBookings": "Reservas Totales",
+        "upcomingTrips": "Próximos Viajes",
+        "totalSpent": "Total Gastado",
+        "messages": "Mensajes",
+        "thisMonth": "+{value} este mes",
+        "nextTrip": "Próximo: {destination} en {days} días",
+        "unread": "{count} sin leer"
+      },
+      "charts": {
+        "bookingsOverview": "Resumen de Reservas",
+        "spendingTrend": "Tendencia de Gastos"
+      },
+      "recentBookings": "Reservas Recientes",
+      "departure": "Salida"
+    },
+    "browseCities": {
+      "title": "Explorar Ciudades",
+      "subtitle": "Descubre destinos increíbles para tu próxima aventura",
+      "searchPlaceholder": "Buscar ciudades...",
+      "bookNow": "Reservar Ahora",
+      "perNight": "por noche",
+      "loadMore": "Cargar Más",
+      "moreAvailable": "más disponibles"
+    },
+    "bookings": {
+      "title": "Mis Reservas",
+      "subtitle": "Gestiona tus reservas de viaje actuales y pasadas",
+      "tabs": {
+        "current": "Actuales",
+        "past": "Pasadas"
+      },
+      "fields": {
+        "checkIn": "Entrada",
+        "checkOut": "Salida",
+        "guests": "Huéspedes",
+        "bookingId": "ID de Reserva"
+      },
+      "status": {
+        "confirmed": "Confirmada",
+        "pending": "Pendiente",
+        "completed": "Completada"
+      },
+      "cancel": "Cancelar",
+      "details": {
+        "title": "Detalles de la Reserva",
+        "duration": "Duración",
+        "nights": "{count} noche",
+        "nights_plural": "{count} noches",
+        "guest": "{count} huésped",
+        "guest_plural": "{count} huéspedes",
+        "priceSummary": "Resumen de Precios",
+        "totalAmount": "Monto Total",
+        "paymentCompleted": "Pago completado el {date}",
+        "actions": {
+          "downloadReceipt": "Descargar Recibo",
+          "cancelBooking": "Cancelar Reserva"
+        }
+      },
+      "pagination": {
+        "showing": "Mostrando",
+        "to": "a",
+        "of": "de",
+        "results": "resultados",
+        "previous": "Anterior",
+        "next": "Siguiente",
+        "page": "Página"
+      }
+    },
+    "payments": {
+      "title": "Pagos y Transacciones",
+      "subtitle": "Ver tu historial de pagos y detalles de transacciones",
+      "summary": {
+        "totalSpent": "Total Gastado",
+        "pendingPayments": "Pagos Pendientes",
+        "totalTransactions": "Transacciones Totales"
+      },
+      "chart": {
+        "paymentHistory": "Historial de Pagos",
+        "payments": "Pagos",
+        "refunds": "Reembolsos"
+      },
+      "transactionHistory": "Historial de Transacciones",
+      "table": {
+        "date": "Fecha",
+        "description": "Descripción",
+        "method": "Método",
+        "amount": "Monto",
+        "status": "Estado"
+      },
+      "status": {
+        "completed": "Completado",
+        "pending": "Pendiente"
+      },
+      "filter": {
+        "status": "Filtrar por Estado",
+        "all": "Todos"
+      },
+      "type": {
+        "payment": "Pago",
+        "refund": "Reembolso"
+      },
+      "descriptions": {
+        "parisTrip": "Reserva de Viaje a París",
+        "tokyoTrip": "Reserva de Viaje a Tokio",
+        "barcelonaTrip": "Reserva de Viaje a Barcelona",
+        "londonTrip": "Reserva de Viaje a Londres",
+        "romeTrip": "Reserva de Viaje a Roma",
+        "dubaiTrip": "Reserva de Viaje a Dubái",
+        "newYorkTrip": "Reserva de Viaje a Nueva York",
+        "sydneyTrip": "Reserva de Viaje a Sídney",
+        "baliTrip": "Reserva de Viaje a Bali",
+        "santoriniTrip": "Reserva de Viaje a Santorini",
+        "cancelledLondonTrip": "Viaje a Londres Cancelado",
+        "cancelledRomeTrip": "Viaje a Roma Cancelado",
+        "amsterdamTrip": "Reserva de Viaje a Ámsterdam",
+        "pragueTrip": "Reserva de Viaje a Praga",
+        "viennaTrip": "Reserva de Viaje a Viena",
+        "istanbulTrip": "Reserva de Viaje a Estambul",
+        "lisbonTrip": "Reserva de Viaje a Lisboa",
+        "athensTrip": "Reserva de Viaje a Atenas",
+        "cancelledAmsterdamTrip": "Viaje a Ámsterdam Cancelado",
+        "cancelledPragueTrip": "Viaje a Praga Cancelado"
+      },
+      "pagination": {
+        "showing": "Mostrando",
+        "to": "a",
+        "of": "de",
+        "results": "resultados",
+        "previous": "Anterior",
+        "next": "Siguiente",
+        "page": "Página"
+      }
+    },
+    "messages": {
+      "title": "Mensajes",
+      "subtitle": "Chatea con soporte y socios de viaje",
+      "searchPlaceholder": "Buscar conversaciones...",
+      "online": "En línea",
+      "selectConversation": "Selecciona una conversación para comenzar a chatear",
+      "typeMessage": "Escribe un mensaje...",
+      "send": "Enviar"
+    },
+    "settings": {
+      "title": "Configuración",
+      "subtitle": "Gestiona la configuración y preferencias de tu cuenta",
+      "tabs": {
+        "profile": "Perfil",
+        "security": "Seguridad",
+        "preferences": "Preferencias"
+      },
+      "profile": {
+        "title": "Información del Perfil",
+        "changePhoto": "Cambiar Foto",
+        "firstName": "Nombre",
+        "lastName": "Apellido",
+        "email": "Correo Electrónico",
+        "phone": "Teléfono",
+        "bio": "Biografía",
+        "saveChanges": "Guardar Cambios"
+      },
+      "security": {
+        "title": "Configuración de Seguridad",
+        "currentPassword": "Contraseña Actual",
+        "newPassword": "Nueva Contraseña",
+        "confirmNewPassword": "Confirmar Nueva Contraseña",
+        "updatePassword": "Actualizar Contraseña"
+      },
+      "preferences": {
+        "title": "Preferencias",
+        "emailNotifications": "Notificaciones por Correo",
+        "emailNotificationsDescription": "Recibir actualizaciones por correo sobre tus reservas",
+        "smsNotifications": "Notificaciones por SMS",
+        "smsNotificationsDescription": "Recibir actualizaciones por SMS sobre tus viajes"
+      }
+    },
+    "booking": {
+      "modal": {
+        "checkIn": "Fecha de Entrada",
+        "checkOut": "Fecha de Salida",
+        "guests": "Número de Huéspedes",
+        "paymentMethod": "Método de Pago",
+        "creditCard": "Tarjeta de Crédito",
+        "debitCard": "Tarjeta de Débito",
+        "paypal": "PayPal",
+        "bankTransfer": "Transferencia Bancaria",
+        "summary": {
+          "nights": "{price} × {nights} noches",
+          "guestsNights": "{guests} {guestLabel} × {nights} noches",
+          "total": "Total",
+          "confirm": "Confirmar Reserva - ${amount}",
+          "processing": "Procesando..."
+        },
+        "success": "¡Reserva confirmada! Consulta tu página de reservas para más detalles."
+      }
+    },
+    "notifications": {
+      "bookingConfirmed": "Tu reserva a {destination} ha sido confirmada",
+      "paymentReceived": "Pago recibido para el viaje a {destination}",
+      "newMessage": "Nuevo mensaje del agente de viajes",
+      "time": {
+        "hoursAgo": "hace {count} horas",
+        "hourAgo": "hace {count} hora",
+        "daysAgo": "hace {count} días",
+        "dayAgo": "hace {count} día"
+      }
+    }
   }
 }

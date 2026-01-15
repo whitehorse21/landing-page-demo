@@ -160,5 +160,230 @@
       "service": "Service"
     },
     "copyright": "© {year} Travels'. All rights reserved."
+  },
+  "dashboard": {
+    "menu": {
+      "dashboard": "Dashboard",
+      "browseCities": "Browse Cities",
+      "bookings": "Bookings",
+      "payments": "Payments",
+      "messages": "Messages",
+      "settings": "Settings",
+      "logout": "Logout"
+    },
+    "header": {
+      "notifications": "Notifications",
+      "noNotifications": "No notifications"
+    },
+    "dashboard": {
+      "title": "Welcome back, {name}!",
+      "subtitle": "Here's what's happening with your travels today.",
+      "stats": {
+        "totalBookings": "Total Bookings",
+        "upcomingTrips": "Upcoming Trips",
+        "totalSpent": "Total Spent",
+        "messages": "Messages",
+        "thisMonth": "+{value} this month",
+        "nextTrip": "Next: {destination} in {days} days",
+        "unread": "{count} unread"
+      },
+      "charts": {
+        "bookingsOverview": "Bookings Overview",
+        "spendingTrend": "Spending Trend"
+      },
+      "recentBookings": "Recent Bookings",
+      "departure": "Departure"
+    },
+    "browseCities": {
+      "title": "Browse Cities",
+      "subtitle": "Discover amazing destinations for your next adventure",
+      "searchPlaceholder": "Search cities...",
+      "bookNow": "Book Now",
+      "perNight": "per night",
+      "loadMore": "Load More",
+      "moreAvailable": "more available"
+    },
+    "bookings": {
+      "title": "My Bookings",
+      "subtitle": "Manage your current and past travel bookings",
+      "tabs": {
+        "current": "Current",
+        "past": "Past"
+      },
+      "fields": {
+        "checkIn": "Check-in",
+        "checkOut": "Check-out",
+        "guests": "Guests",
+        "bookingId": "Booking ID"
+      },
+      "status": {
+        "confirmed": "Confirmed",
+        "pending": "Pending",
+        "completed": "Completed"
+      },
+      "cancel": "Cancel",
+      "details": {
+        "title": "Booking Details",
+        "duration": "Duration",
+        "nights": "{count} night",
+        "nights_plural": "{count} nights",
+        "guest": "{count} guest",
+        "guest_plural": "{count} guests",
+        "priceSummary": "Price Summary",
+        "totalAmount": "Total Amount",
+        "paymentCompleted": "Payment completed on {date}",
+        "actions": {
+          "downloadReceipt": "Download Receipt",
+          "cancelBooking": "Cancel Booking"
+        }
+      },
+      "pagination": {
+        "showing": "Showing",
+        "to": "to",
+        "of": "of",
+        "results": "results",
+        "previous": "Previous",
+        "next": "Next",
+        "page": "Page"
+      }
+    },
+    "payments": {
+      "title": "Payments & Transactions",
+      "subtitle": "View your payment history and transaction details",
+      "summary": {
+        "totalSpent": "Total Spent",
+        "pendingPayments": "Pending Payments",
+        "totalTransactions": "Total Transactions"
+      },
+      "chart": {
+        "paymentHistory": "Payment History",
+        "payments": "Payments",
+        "refunds": "Refunds"
+      },
+      "transactionHistory": "Transaction History",
+      "table": {
+        "date": "Date",
+        "description": "Description",
+        "method": "Method",
+        "amount": "Amount",
+        "status": "Status"
+      },
+      "status": {
+        "completed": "Completed",
+        "pending": "Pending"
+      },
+      "filter": {
+        "status": "Filter by Status",
+        "all": "All"
+      },
+      "type": {
+        "payment": "Payment",
+        "refund": "Refund"
+      },
+      "descriptions": {
+        "parisTrip": "Paris Trip Booking",
+        "tokyoTrip": "Tokyo Trip Booking",
+        "barcelonaTrip": "Barcelona Trip Booking",
+        "londonTrip": "London Trip Booking",
+        "romeTrip": "Rome Trip Booking",
+        "dubaiTrip": "Dubai Trip Booking",
+        "newYorkTrip": "New York Trip Booking",
+        "sydneyTrip": "Sydney Trip Booking",
+        "baliTrip": "Bali Trip Booking",
+        "santoriniTrip": "Santorini Trip Booking",
+        "cancelledLondonTrip": "Cancelled London Trip",
+        "cancelledRomeTrip": "Cancelled Rome Trip",
+        "amsterdamTrip": "Amsterdam Trip Booking",
+        "pragueTrip": "Prague Trip Booking",
+        "viennaTrip": "Vienna Trip Booking",
+        "istanbulTrip": "Istanbul Trip Booking",
+        "lisbonTrip": "Lisbon Trip Booking",
+        "athensTrip": "Athens Trip Booking",
+        "cancelledAmsterdamTrip": "Cancelled Amsterdam Trip",
+        "cancelledPragueTrip": "Cancelled Prague Trip"
+      },
+      "pagination": {
+        "showing": "Showing",
+        "to": "to",
+        "of": "of",
+        "results": "results",
+        "previous": "Previous",
+        "next": "Next",
+        "page": "Page"
+      }
+    },
+    "messages": {
+      "title": "Messages",
+      "subtitle": "Chat with support and travel partners",
+      "searchPlaceholder": "Search conversations...",
+      "online": "Online",
+      "selectConversation": "Select a conversation to start chatting",
+      "typeMessage": "Type a message...",
+      "send": "Send"
+    },
+    "settings": {
+      "title": "Settings",
+      "subtitle": "Manage your account settings and preferences",
+      "tabs": {
+        "profile": "Profile",
+        "security": "Security",
+        "preferences": "Preferences"
+      },
+      "profile": {
+        "title": "Profile Information",
+        "changePhoto": "Change Photo",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "bio": "Bio",
+        "saveChanges": "Save Changes"
+      },
+      "security": {
+        "title": "Security Settings",
+        "currentPassword": "Current Password",
+        "newPassword": "New Password",
+        "confirmNewPassword": "Confirm New Password",
+        "updatePassword": "Update Password"
+      },
+      "preferences": {
+        "title": "Preferences",
+        "emailNotifications": "Email Notifications",
+        "emailNotificationsDescription": "Receive email updates about your bookings",
+        "smsNotifications": "SMS Notifications",
+        "smsNotificationsDescription": "Receive SMS updates about your trips"
+      }
+    },
+    "booking": {
+      "modal": {
+        "checkIn": "Check-in Date",
+        "checkOut": "Check-out Date",
+        "guests": "Number of Guests",
+        "paymentMethod": "Payment Method",
+        "creditCard": "Credit Card",
+        "debitCard": "Debit Card",
+        "paypal": "PayPal",
+        "bankTransfer": "Bank Transfer",
+        "summary": {
+          "nights": "{price} × {nights} nights",
+          "guestsNights": "{guests} {guestLabel} × {nights} nights",
+          "total": "Total",
+          "confirm": "Confirm Booking - ${amount}",
+          "processing": "Processing..."
+        },
+        "success": "Booking confirmed! Check your bookings page for details."
+      }
+    },
+    "notifications": {
+      "bookingConfirmed": "Your booking to {destination} has been confirmed",
+      "paymentReceived": "Payment received for {destination} trip",
+      "newMessage": "New message from travel agent",
+      "time": {
+        "hoursAgo": "{count} hours ago",
+        "hourAgo": "{count} hour ago",
+        "daysAgo": "{count} days ago",
+        "dayAgo": "{count} day ago"
+      }
+    }
   }
 }
