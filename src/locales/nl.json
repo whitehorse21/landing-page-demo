@@ -81,7 +81,8 @@
   "blog": {
     "title": "Laatste Reisverhalen",
     "description": "Ontdek inspirerende reisverhalen, tips en gidsen van onze gemeenschap van reizigers.",
-    "readMore": "Lees Meer"
+    "readMore": "Lees Meer",
+    "backToBlog": "Terug naar Blog"
   },
   "experience": {
     "title": "Onze Ervaring",

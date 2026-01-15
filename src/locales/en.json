@@ -81,7 +81,8 @@
   "blog": {
     "title": "Latest Travel Stories",
     "description": "Discover inspiring travel stories, tips, and guides from our community of travelers.",
-    "readMore": "Read More"
+    "readMore": "Read More",
+    "backToBlog": "Back to Blog"
   },
   "experience": {
     "title": "Our Experience",

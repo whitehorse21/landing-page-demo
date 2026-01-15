@@ -81,7 +81,8 @@
   "blog": {
     "title": "Dernières Histoires de Voyage",
     "description": "Découvrez des histoires de voyage inspirantes, des conseils et des guides de notre communauté de voyageurs.",
-    "readMore": "Lire Plus"
+    "readMore": "Lire Plus",
+    "backToBlog": "Retour au Blog"
   },
   "experience": {
     "title": "Notre Expérience",

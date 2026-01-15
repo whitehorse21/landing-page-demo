@@ -1467,6 +1467,37 @@ textarea,
   flex-shrink: 0;
 }
 
+/* Blog Detail Slide-in Animation */
+@keyframes blogDetailSlideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes blogDetailSlideOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.blog-detail-enter {
+  animation: blogDetailSlideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.blog-detail-exit {
+  animation: blogDetailSlideOut 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
 .testimonial-card {
   flex-shrink: 0;
 }

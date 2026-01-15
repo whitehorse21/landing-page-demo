@@ -116,7 +116,7 @@ const SignupPage = () => {
               {/* Top Controls - Back, Language, Theme */}
               <div className="mb-6 flex items-center justify-between">
                 <button
-                  onClick={() => navigate(-1)}
+                  onClick={() => navigate("/")}
                   className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-emerald-400 transition-colors group"
                 >
                   <svg className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
