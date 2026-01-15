@@ -384,6 +384,14 @@
         "daysAgo": "hace {count} días",
         "dayAgo": "hace {count} día"
       }
+    },
+    "logout": {
+      "confirm": {
+        "title": "Confirmar Cierre de Sesión",
+        "message": "¿Estás seguro de que deseas cerrar sesión? Necesitarás iniciar sesión nuevamente para acceder a tu cuenta.",
+        "cancel": "Cancelar",
+        "logout": "Cerrar Sesión"
+      }
     }
   }
 }

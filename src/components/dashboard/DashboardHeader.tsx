@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '../../contexts/AuthContext'
 import { useTheme } from '../../contexts/ThemeContext'
 import { useLanguage } from '../../contexts/LanguageContext'
+import LogoutConfirmModal from './LogoutConfirmModal'
 
 interface DashboardHeaderProps {
   sidebarOpen: boolean
@@ -18,6 +19,7 @@ const DashboardHeader = ({ sidebarOpen, setSidebarOpen }: DashboardHeaderProps) 
   const [shouldRenderNotifications, setShouldRenderNotifications] = useState(false)
   const [profileOpen, setProfileOpen] = useState(false)
   const [langMenuOpen, setLangMenuOpen] = useState(false)
+  const [showLogoutModal, setShowLogoutModal] = useState(false)
   const profileRef = useRef<HTMLDivElement>(null)
   const langRef = useRef<HTMLDivElement>(null)
   const notifRef = useRef<HTMLDivElement>(null)
@@ -229,11 +231,7 @@ const DashboardHeader = ({ sidebarOpen, setSidebarOpen }: DashboardHeaderProps) 
                 <button
                   onClick={() => {
                     setProfileOpen(false)
-                    navigate('/', { replace: true })
-                    // Delay logout to ensure navigation completes first
-                    setTimeout(() => {
-                      logout()
-                    }, 0)
+                    setShowLogoutModal(true)
                   }}
                   className="w-full text-left px-4 py-2 text-sm text-red-600 dark:text-red-400 hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
@@ -244,6 +242,20 @@ const DashboardHeader = ({ sidebarOpen, setSidebarOpen }: DashboardHeaderProps) 
           </div>
         </div>
       </div>
+      
+      {/* Logout Confirmation Modal */}
+      <LogoutConfirmModal
+        isOpen={showLogoutModal}
+        onClose={() => setShowLogoutModal(false)}
+        onConfirm={() => {
+          setShowLogoutModal(false)
+          navigate('/', { replace: true })
+          // Delay logout to ensure navigation completes first
+          setTimeout(() => {
+            logout()
+          }, 0)
+        }}
+      />
     </header>
   )
 }
