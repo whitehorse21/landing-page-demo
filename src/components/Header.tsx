@@ -7,6 +7,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false)
   const [dropdownPosition, setDropdownPosition] = useState({ top: 0, right: 0 })
+  const [scrollProgress, setScrollProgress] = useState(0)
+  const [showProgress, setShowProgress] = useState(false)
   const { theme, toggleTheme } = useTheme()
   const { language, setLanguage, t } = useLanguage()
   const langMenuDesktopRef = useRef<HTMLDivElement>(null)
@@ -81,6 +83,27 @@ const Header = () => {
     }
   }, [isLangMenuOpen])
 
+  // Track scroll progress
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight
+      const documentHeight = document.documentElement.scrollHeight
+      const scrollTop = window.scrollY || document.documentElement.scrollTop
+      const scrollableHeight = documentHeight - windowHeight
+      const progress = scrollableHeight > 0 ? (scrollTop / scrollableHeight) * 100 : 0
+      setScrollProgress(Math.min(100, Math.max(0, progress)))
+      // Show progress bar when scrolling starts (scrollTop > 0)
+      setShowProgress(scrollTop > 0)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll() // Calculate initial progress
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
     const targetId = href.replace('#', '')
@@ -101,8 +124,9 @@ const Header = () => {
   }
 
   return (
-    <header className="bg-gradient-to-r from-emerald-50 via-green-50 to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 shadow-sm sticky top-0 z-50 transition-colors duration-300 overflow-x-hidden w-full max-w-full">
-      <nav className="container mx-auto px-4 lg:px-8 relative">
+    <header className="fixed top-0 left-0 right-0 bg-gradient-to-r from-emerald-50 via-green-50 to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 shadow-sm z-50 transition-colors duration-300 overflow-x-hidden w-full max-w-full">
+      <div className="relative">
+        <nav className="container mx-auto px-4 lg:px-8 relative">
         <div className="flex items-center justify-between h-16 relative">
           {/* Logo */}
           <div className="flex items-center space-x-2 z-10">
@@ -358,7 +382,15 @@ const Header = () => {
             </div>
           </div>
         )}
-      </nav>
+        </nav>
+        {/* Scroll Progress Bar */}
+        <div className={`absolute bottom-0 left-0 w-full h-1 bg-gray-200 dark:bg-gray-700 transition-opacity duration-300 ease-in-out ${showProgress ? 'opacity-100' : 'opacity-0'}`}>
+          <div
+            className="h-full bg-gradient-to-r from-emerald-500 via-green-500 to-emerald-500 dark:from-emerald-400 dark:via-green-400 dark:to-emerald-400 transition-all duration-150 ease-out"
+            style={{ width: `${scrollProgress}%` }}
+          />
+        </div>
+      </div>
     </header>
   )
 }

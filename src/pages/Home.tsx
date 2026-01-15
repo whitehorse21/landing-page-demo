@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-emerald-50 via-green-50 to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300 overflow-x-hidden w-full max-w-full">
       <Header/>
-      <main className="bg-gradient-to-r from-emerald-50 via-green-50 to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300 overflow-x-hidden w-full max-w-full">
+      <main className="bg-gradient-to-r from-emerald-50 via-green-50 to-emerald-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300 overflow-x-hidden w-full max-w-full pt-16">
         <Hero onOpenLoginModal={() => setIsLoginModalOpen(true)} />
         <div className="container mx-auto px-4 py-8 lg:px-8">
           <div className="space-y-2">
